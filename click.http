@@ -1,0 +1,8 @@
+GET http://localhost:8000/c?p=1&o=110110&n=2&s=123123&c=qwerty&a=0&app=&f=0&ifa=&v=&st=0
+
+> {%
+    client.test("Request executed successfully", function() {
+        client.assert(response.status === 307, "Response status is not 307");
+    });
+%}
+###

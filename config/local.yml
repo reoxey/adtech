@@ -1,0 +1,18 @@
+log:
+  error: "[ADTECHERR]"
+  verbose: "[ADTECHVERB]"
+  server: mqnv
+dbs:
+  ip2l: ./asset/db/GEO.BIN
+  d51: ./asset/db/DEVICE.trie
+redis:
+  addr: 127.0.0.1
+mysql:
+  dsn: "user:pass@tcp(127.0.0.1:3306)/adtech"
+cassandra:
+  keyspace: adtech
+  username: cassandra
+  password: cassandra
+endpoints:
+  cassandra:
+    - 127.0.0.1
